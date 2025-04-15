@@ -1,0 +1,66 @@
+zoomtext = 'Нажмите на миниатюру для увеличенного просмотра'
+products_desc = 'Описание товара'
+products_fsk18_check = 'Этот товар доступен только после проверки возраста.'
+products_manufacturer_model = 'Артикул производителя:'
+products_tags = 'Характеристики'
+heading_products_tags = 'Характеристики товара'
+
+first = '&laquo; первая'
+back = '&laquo; назад'
+overview = 'Обзор'
+next = 'далее &raquo;'
+last = 'последняя &raquo;'
+
+heading_miscellaneous = 'Способы оплаты'
+text_miscellaneous = 'Этот блок можно изменить в файле tpl_modified_responsive/boxes/box_miscellaneous.html. Языковые переменные находятся в файле tpl_modified_responsive/lang/german/lang_german.custom.'
+
+ab_admin = 'Админпанель'
+ab_orders = 'Заказы'
+ab_contentmanager = 'Контент-менеджер'
+ab_customers = 'Клиенты'
+ab_category = 'Категории/Товары'
+ab_logoff = 'Выход'
+ab_news = 'Новости'
+ab_offline = 'Магазин оффлайн'
+ab_update = 'Обновление'
+ab_support = 'Поддержка'
+ab_shop = 'Магазин'
+ab_caching = 'Кэширование'
+
+ab_edit_content = 'Редактировать контент'
+ab_edit_product = 'Редактировать товар'
+ab_edit_attributes = 'Редактировать атрибуты товара'
+ab_edit_category = 'Редактировать категорию'
+ab_edit_xsell = 'Редактировать перекрестные продажи'
+ab_edit_tags = 'Характеристики товара'
+
+info_reviews = 'Отзывы:'
+info_review = 'Отзыв:'
+
+heading_trustedshops = 'Trusted Shops'
+
+text_search_again = 'К сожалению, по вашему запросу ничего не найдено'
+
+listing_listview = 'Список'
+listing_boxview = 'Плитка'
+
+subcats_menu_heading = 'Категории'
+
+# Header # 
+link_settings = 'Настройки'
+link_specials = 'Специальные предложения'
+link_whatsnew = 'Новинки'
+link_cart = 'Корзина'
+link_menu = 'Меню'
+link_search = 'Поиск'
+
+addquickie_placeholder = 'Номер товара ...'
+heading_flyout_text_quickie = 'Пожалуйста, введите номер товара'
+heading_flyout_product_cart = 'Ваша корзина содержит'
+heading_flyout_product_wishlist = 'Ваш список желаний содержит'
+heading_flyout_qty = 'Количество:'
+heading_flyout_cart = 'Показать корзину'
+heading_flyout_checkout = 'Перейти к оформлению'
+heading_flyout_wishlist = 'Показать список желаний'
+
+heading_box_languages = '

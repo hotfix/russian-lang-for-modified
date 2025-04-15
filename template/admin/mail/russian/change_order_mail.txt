@@ -1,0 +1,22 @@
+{if $GENDER == 'm'}Уважаемый{elseif $GENDER == 'f'}Уважаемая{else}Здравствуйте{/if} {$NAME},
+
+Статус вашего заказа {if $ORDER_NR}№ {$ORDER_NR}{/if} {if $ORDER_DATE}от {$ORDER_DATE}{/if} был изменён.
+
+{if $ORDER_LINK}Ссылка на заказ:  
+{$ORDER_LINK} {/if}
+
+{if $NOTIFY_COMMENTS}Примечания к вашему заказу:  
+{$NOTIFY_COMMENTS}{/if}
+
+Новый статус: {$ORDER_STATUS}
+
+{if $PARCEL_COUNT > 0}
+Ваша отправка состоит из {$PARCEL_COUNT} посылки(ок).  
+Вы можете отследить статус доставки по следующим номерам отслеживания:  
+{foreach name=aussen item=tracking_data from=$PARCEL_ARRAY}
+{$tracking_data.tracking_link}
+{/foreach}{/if}
+
+Если у вас возникли вопросы, пожалуйста, ответьте на это письмо.
+
+[SIGNATUR]

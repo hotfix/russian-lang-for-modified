@@ -1,0 +1,53 @@
+<div style="width:700px;margin: 0px auto;">
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+	<tr> 
+    	<td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+	</tr>
+	<tr> 
+    <td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+      <font face="Tahoma, Verdana, sans-serif">Учётная запись успешно создана</font>
+    </td>
+  </tr>
+  <tr> 
+    <td>
+      <br />
+      <font size="2" face="Tahoma, Verdana, sans-serif"><b>{if $GENDER == 'm'}Уважаемый{elseif $GENDER == 'f'}Уважаемая{else}Здравствуйте{/if} {$NAME},</b><br />
+      <br />
+      ваша учётная запись была успешно создана.<br />
+      Теперь вам доступны следующие функции:<br />
+      <br />
+      <b>Корзина</b> — товары, добавленные в корзину, останутся там до тех пор, пока вы их не удалите или не оформите заказ.<br />
+      <br />
+      <b>Адресная книга</b> — позволяет сохранить несколько различных адресов доставки.<br />
+      <br />
+      <b>История заказов</b> — вы всегда можете просматривать свои предыдущие заказы.<br />
+      <br />
+      <b>Оценка товаров</b> — оценивайте и комментируйте наши товары.<br />
+      <br />
+      <u>Внимание:</u> если вы не создавали эту учётную запись, 
+      пожалуйста, свяжитесь с нами по адресу: <a href="mailto:{$content.MAIL_REPLY_ADDRESS}">{$content.MAIL_REPLY_ADDRESS}</a><br />
+  
+      {if $SEND_GIFT == true}
+      <br />
+      В знак благодарности за создание учётной записи вы получили <b>{$GIFT_AMMOUNT}</b> в виде подарочного сертификата!<br />
+      <br />
+      Используйте ваш сертификат с кодом <b>{$GIFT_CODE}</b> при оформлении заказа или просто перейдите по следующей ссылке:
+      <a href="{$GIFT_LINK}">[использовать сертификат]</a>.<br />
+      {/if}
+  
+      {if $SEND_COUPON == true}
+      <br />
+      В знак благодарности за регистрацию вы получили купон на скидку.<br />
+      Информация о купоне: <b>{$COUPON_DESC}</b><br />
+      Введите код купона {$COUPON_CODE} во время оформления заказа в соответствующем поле.<br />
+      {/if}
+      <br />
+      Если у вас возникли вопросы, пожалуйста, свяжитесь с нами по адресу: <a href="mailto:{$content.MAIL_REPLY_ADDRESS}">{$content.MAIL_REPLY_ADDRESS}</a>
+      </font>
+    </td>
+  </tr>
+  
+</table>
+
+[SIGNATUR]
+</div>

@@ -1,0 +1,84 @@
+{config_load file="$language/lang_$language.conf" section="duty_info"} 
+{$address_label_customer}
+
+{if $SHIPPING_METHOD}Способ доставки: {$SHIPPING_METHOD}
+{/if}
+{if $PAYMENT_METHOD}Способ оплаты: {$PAYMENT_METHOD}
+{/if}
+Номер заказа: {$oID}
+Дата: {$DATE}
+{if $csID}ID клиента: {$csID}
+{/if}
+Ваш e-mail: {$EMAIL}
+{if $vatID}Ваш номер НДС: {$vatID}
+{/if}
+----------------------------------------------------------------------
+
+{if $GENDER == 'm'}Уважаемый{elseif $GENDER == 'f'}Уважаемая{else}Здравствуйте{/if} {$NAME},
+
+благодарим вас за ваш заказ.
+
+{$PAYMENT_INFO_TXT}
+
+{if isset($NEW_PASSWORD) && $NEW_PASSWORD != ''}
+Ваша учётная запись защищена паролем.  
+Вы можете изменить пароль по следующей ссылке: {$NEW_PASSWORD}
+{/if}
+
+{if $COMMENTS}
+Ваш комментарий:
+{$COMMENTS}
+{/if}
+
+Вы заказали следующие товары:
+----------------------------------------------------------------------
+
+{foreach name=aussen item=order_values from=$order_data} 
+{$order_values.PRODUCTS_QTY} x {$order_values.PRODUCTS_NAME} {$order_values.PRODUCTS_PRICE}
+Артикул: {$order_values.PRODUCTS_MODEL}{$order_values.PRODUCTS_ATTRIBUTES_MODEL}
+{if $order_values.PRODUCTS_ORDER_DESCRIPTION != ''}{$order_values.PRODUCTS_ORDER_DESCRIPTION}
+{/if}
+{if $order_values.PRODUCTS_VPE != ''}{$order_values.PRODUCTS_VPE}
+{/if}
+{if $order_values.PRODUCTS_SHIPPING_TIME != ''}Срок доставки: {$order_values.PRODUCTS_SHIPPING_TIME}
+{/if}
+{if $order_values.PRODUCTS_ATTRIBUTES != ''}{$order_values.PRODUCTS_ATTRIBUTES}
+{/if}
+
+{/foreach}
+
+{foreach name=aussen item=order_total_values from=$order_total}
+{$order_total_values.TITLE}{$order_total_values.TEXT}
+{/foreach}
+
+{$downloads_content_txt}
+
+{if $address_label_payment != $address_label_shipping}
+{if isset($SHIPPING_CLASS) && strpos($SHIPPING_CLASS, 'selfpickup') !== false}Адрес самовывоза
+{else}Адрес доставки
+{/if} 
+----------------------------------------------------------------------  
+{$address_label_shipping}{/if}
+
+{if $address_label_payment}
+{if $address_label_payment != $address_label_shipping}Платёжный адрес
+{else}Платёжный / Адрес доставки
+{/if}
+----------------------------------------------------------------------  
+{$address_label_payment}
+{/if}
+
+{if $DELIVERY_DUTY_INFO != ''}
+
+----------------------------------------------------------------------  
+{#text_duty_info#}
+----------------------------------------------------------------------  
+{/if}
+
+[SIGNATUR]
+
+{$REVOCATION_TXT}
+
+{$AGB_TXT}
+
+{$PRIVACY_POLICY_TXT}

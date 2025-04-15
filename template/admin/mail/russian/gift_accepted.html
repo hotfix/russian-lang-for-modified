@@ -1,0 +1,29 @@
+<div style="width:700px;margin: 0px auto;">
+    <table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+        <tr> 
+            <td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+        </tr>
+        <tr> 
+            <td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+            <font face="Tahoma, Verdana, sans-serif">Ваш подарочный сертификат</font>
+          </td>
+        </tr>
+        <tr> 
+            <td>
+            <br />
+            <font size="2" face="Tahoma, Verdana, sans-serif"><b>{if $GENDER == 'm'}Уважаемый{elseif $GENDER == 'f'}Уважаемая{else}Здравствуйте{/if} {$NAME},</b>
+            <br /><br />
+            Код сертификата, который вы приобрели, был активирован!
+            <br /><br />
+            Теперь вы можете использовать его или отправить кому-либо по электронной почте.
+            <br /><br />
+            Номинал вашего сертификата составляет {$AMMOUNT}.
+            </font>
+    
+            </td>
+        </tr>
+    </table>
+    
+    [SIGNATUR]
+    </div>
+    

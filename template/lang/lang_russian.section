@@ -1,0 +1,191 @@
+# Die lang_german.section wird nur eingebunden, wenn in der "../config/config.php" die "TEMPLATE_ENGINE" auf "smarty_3" oder "smarty_4" gesetzt ist!
+
+[account_checkout_express]
+                                 
+[account_delete]
+title_delete_account = 'Вы действительно хотите удалить свой аккаунт?'
+text_password = 'Пароль:'
+
+[account_edit]
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+
+[account_history_info]
+order_text_each = 'каждый'
+
+[account_history]
+text_account_history = 'Здесь вы можете просмотреть все сделанные вами заказы.<br />Вы можете снова просмотреть их подробно или повторить заказ с помощью кнопок корзины.'
+
+[account_password]
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+text_note = 'Примечание'
+text_account_new_password_info = 'После отправки формы ваш новый пароль будет сохранён, и вы будете автоматически перенаправлены на страницу входа. Там вы сможете войти с новым паролем.'
+
+[account]
+title_nav_account = 'Ваш аккаунт'
+title_nav_account_edit = 'Редактировать аккаунт'
+title_nav_address_book = 'Адресная книга'
+title_nav_password = 'Сменить пароль'
+title_nav_orders = 'Ваши заказы'
+title_nav_account_delete = 'Удалить аккаунт'
+title_nav_checkout_express = 'Настройки быстрой покупки'
+title_nav_newsletter = 'Рассылка'
+title_nav_logoff = 'Выход'
+
+title_accountbox_create = 'Создать аккаунт клиента'
+title_accountbox_create_guest = 'Создать гостевой аккаунт'
+title_accountbox_password_forgotten = 'Забыли пароль?'
+title_accountbox_login_success = 'Добро пожаловать'
+
+[address_book_process]
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+
+
+[address_book]
+
+[advanced_search]
+
+[also_purchased]
+
+[boxes]
+text_shippingtime = 'Срок доставки:'
+show_all = 'Показать все'
+subcats_total_heading = 'Ассортимент товаров'
+text_cart_or = 'или'
+
+[error_handler]
+
+[checkout_navigation]
+title_shipping = 'Доставка'
+desc_shipping = 'Пожалуйста, выберите способ доставки'
+title_payment = 'Оплата'
+desc_payment = 'Пожалуйста, выберите способ оплаты'
+title_confirmation = 'Подтверждение'
+desc_confirmation = 'Пожалуйста, подтвердите ваш заказ'
+title_success = 'Успешно'
+desc_success = 'Спасибо за ваш заказ'
+
+
+[checkout_confirmation]
+order_text_each = 'каждый'
+text_payment_info_layertext = 'Информация'
+
+[checkout_payment]
+checkout_edit_address = 'Изменить адрес'
+
+[checkout_new_address]
+
+[checkout_payment_address]
+
+[checkout_shipping_address]
+
+[checkout_shipping]
+checkout_edit_address = 'Изменить адрес'
+
+[checkout_success]
+
+[contact_us]
+text_hint = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+
+[cookie_usage]
+
+[create_account]
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+
+[create_account_guest]
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+
+[cross_selling]
+
+[downloads_module]
+heading_personal = 'Ваши данные'
+
+[main]
+
+[gift_cart]
+text_heading_gift = 'У вас есть купон или подарочный сертификат?'
+voucher_info_text = 'Ваш текущий баланс'
+voucher_heading_text_popup = 'Информация о вашем кредите'
+text_create_account = 'Создать аккаунт клиента'
+
+[graduated_price]
+
+[gv_redeem]
+
+[gv_send]
+
+[filter]
+listing_text_filter_sort = 'Фильтр и сортировка'
+listing_text_sort = 'Сортировка'
+listing_filter_text_delete = 'Удалить фильтр'
+
+[login]
+text_returning = 'Вы уже заказывали у нас?<br />Благодарим вас за повторное доверие.'
+
+[logoff]
+
+[index]
+
+[new_products]
+
+[newsletter]
+
+[shopping_cart]
+order_text_update = 'Обновить'
+order_total_heading = 'Итого'
+checkout_express_activate = 'Активировать быструю покупку'
+order_text_each = 'каждый'
+products_basket_quantity = 'Количество'
+text_cart_or = 'или'
+
+[new_password]
+heading_personal = 'Ваши данные'
+text_must = '<i class="fa-solid fa-asterisk"></i> обязательная информация'
+text_note = 'Примечание'
+
+[password_forgotten]
+
+[popup_coupon_help]
+
+[popup_search_help]
+
+[print_order]
+
+[print_product_info]
+
+[product_info]
+products_basket_quantity = 'Количество'
+
+[product_navigator]
+
+[reviews]
+heading_reviews = 'Отзывы клиентов'
+text_reviews_avg = 'Средняя оценка'
+text_reviews_based = 'На основе'
+text_single_review = 'Отзыв'
+text_multiple_review = 'Отзывы клиентов'
+text_review_show_1 = 'Показать все'
+text_review_show_2 = 'Показать отзывы'
+text_review_show = 'Показать отзыв'
+reviews_signs = 'знаков'
+reviews_min = 'мин.'
+
+[product_tags]
+
+[products_category]
+
+[products_media]
+
+[reverse_cross_selling]
+
+[sitemap]
+
+[specials]
+
+[ssl_check]
+
+[categorie_listing]
+
+[upcoming_products]
+
+[wishlist]
+
